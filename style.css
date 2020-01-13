@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+    color: #505962;
+    background-color: black;
+}
+
+/*-------Nav Scrolling Offset ---------*/
+.offset:before{
+    height: 4rem;
+    margin-top: -4rem;
+    content: "";
+    display: block;
+}
+
+/*----Extra Bootstrap Column Padding----*/
+[class*="col-"] {
+    padding:1rem;
+}
+
+/*==============NAVIGATION================*/
+
+.navbar {
+    padding: .7rem 1rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: background-color .5s ease 0s;
+}
+
+.navbar-brand img{
+    height: 4rem;
+    border-radius: 30%;
+}
+
+.svg-inline--fa.fa-w-14{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar-nav li {
+    padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+
+.navbar.solid{
+    background: rgba(0,0,0,0.7)!important;
+    transition: background-color 1s ease 0s;
+}
+
+/*=============LANDING PAGE==============*/
+
+.home-inner {
+    background: linear-gradient(135deg, rgba(42, 85, 102, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/daw.jpg") center no-repeat;
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+}
+
+.caption h1{
+    color: white;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3{
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 2rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block!important;
+}
+
+/*===============FEATURES SECTION===============*/
+.narrow {
+    width: 100%;
+    height: 100%
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.btn-sm {
+    border-width: medium;
+    border-radius: 0;
+    padding: .5rem 1.1rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.btn-turquoise {
+    border-color: #1ebba3;
+    background-color: #1ebba3;
+    color: white;
+}
+
+.btn-turquoise:hover,
+.btn-turquoise:focus{
+    border-color: #189582;
+    background-color: #189582;
+    color: white;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 1rem 0 3rem;
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .fa-layers {
+    color: #1ebba3;
+    height: 6rem;
+    margin: 0 auto;
+    width: 3.9rem;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
+
+.feature p {
+    font-size: 1.1rem;
+}
+
+/*=============== FIXED BACKGROUND IMG DARK ================*/
+.preUs{
+    background: linear-gradient(135deg, rgba(42, 85, 152, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/band.jpg") center no-repeat;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.aboutus{
+    background: linear-gradient(135deg, rgba(42, 100, 102, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/camera.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    color: white;
+}
+
+#projects{
+    margin-top: 70px;
+    background: linear-gradient(135deg, rgba(100, 100, 102, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/camera.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    color: white;
+}
+
+#equipment{
+    margin-top: 70px;
+    background: linear-gradient(135deg, rgba(80, 50, 52, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/equipment.jpeg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    color: white;
+}
+
+#contact{
+    margin-top: 70px;
+    background: linear-gradient(135deg, rgba(50, 50, 102, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 100%),
+    url("img/contact.jpeg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    color: white;
+}
+
+
+
+.dark {
+    background-color: rgba(0,0,0,0.75);
+    padding: 7rem 2rem;
+    text-align: center;
+    z-index: 1000!important;
+}
+
+.dark h3,
+.dark p {
+    color: #e9ecef;
+}
+
+/*==================CLIENT SECTION FIXED BG IMG LIGHT ==============*/
+.stars{
+    background: linear-gradient(135deg, rgba(42, 85, 202, 0.9) 0%,
+    rgba(0, 0, 0, 0.2) 100%),
+    url("img/stars.jpg") center no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.light {
+    padding: 3rem 2rem 2rem;
+    z-index: 1000!important;
+}
+
+.row.light h3 {
+    color: white;
+}
+
+.row.light p {
+    color: white;
+}
+
+.card {
+    border-radius: 0;
+    border: .1rem solid rgba(0,0,0,0.075);
+    box-shadow: 0 0 .8rem rgba(0,0,0,0.075);
+    margin: 0 1rem;
+    transition: transform .4s ease;
+    background-color: skyblue;
+    opacity: 0.2;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.card:hover {
+    transform: scale(.95);
+    opacity: 1;
+    background-color: white;
+    transition: transform .6s ease;
+    cursor: pointer;
+}
+
+.card:active {
+    transform: scale(.95);
+    opacity: 1;
+    background-color: white;
+    transition: transform .6s ease;
+    cursor: pointer;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card h4 {
+    font-weight: 700;
+}
+.card h5 {
+    color: #1ebba3;
+}
+
+.card p {
+    border-top: .1rem solid rgba(0,0,0,0.1);
+    border-bottom: .1rem solid rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.card svg.svg-inline--fa {
+    color: #1ebba3!important;
+    font-size: 1.3rem;
+    width: 2rem;
+}
+
+.card svg.svg-inline--fa:hover {
+    color: #6c757d!important;
+    cursor: pointer;
+}
+
+.owl-dot.active span,
+.owl-dot:hover span {
+    background: #1ebba3!important;
+}
+
+/*============================ CLIENTS SECTION ==============*/
+
+.fixed-background{
+    background: linear-gradient(135deg, rgba(80, 20, 252, .3) 0%,
+    rgba(0, 0, 0, 0.8) 100%);
+    background-size: cover;
+}
+
+.clients img {
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease;
+}
+
+.clients img:hover {
+    transform: scale(0.85);
+}
+
+blockquote .svg-inline--fa {
+    margin: 1rem;
+    color: #1ebba3;
+}
+
+.clients-hr {
+    border-top: .05rem solid #1ebba3;
+}
+
+/*============================ CONTACT SECTION ==============*/
+
+footer {
+    background: black;
+    background-position: top;
+    text-align: center;
+    background-size: cover;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+#contact svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #1ebba3!important;
+}
+
+#contact svg.svg-inline--fa:hover {
+    color: #1ebba3!important;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+hr.socket {
+    border-top: .2rem solid #666b71;
+    width: 100%;
+}
+
+/*============================ Top Scroll ==============*/
+
+.top-scroll svg.svg-inline--fa {
+    font-size: 3rem;
+    height: 1.7rem;
+    color: #53595f;
+    background: white;
+}
+
+a.top-scroll {
+    right: 1.2rem;
+    bottom: 1.2rem;
+    position: fixed;
+    opacity: .3;
+    z-index: 1000;
+    display: none;
+}
+
+a.top-scroll:hover {
+    opacity: .5;
+}
+
+
+/*============================ Media Queries ==============*/
+
+/* DEVICES UNDER 992PX (LG) *//
+@media (max-width: 991px) {
+    .caption h1{
+        font-size: 3.5rem;
+        letter-spacing: .2rem;
+        padding-bottom: .8rem;
+    }
+    .caption h3{
+        font-size: 2.2rem;
+        padding-bottom: 1.7rem;
+    }
+    .btn-lg {
+        padding: .7rem 1.2rem;
+        font-size: 1rem;
+    }
+    .narrow h1 {
+        font-size: 2.1rem;
+    }
+}
+/* DEVICES UNDER 768PX (LG) */
+@media (max-width: 767px) {
+    .caption h1 {
+        font-size: 2.7rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .caption h3 {
+        font-size: 1.7rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn-lg {
+        padding: .6rem 1.1rem;
+        font-size: 1rem;
+    }
+    .narrow h1 {
+        font-size: 1.8rem;
+    }
+    .clients img{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .top-scroll {
+        display: none!important;
+    }
+}
+
+/* DEVICES UNDER 576PX (LG) */
+@media (max-width: 575px) {
+  body {
+    text-align: center;
+  }
+
+.fixed-background {
+  background-size: 100%;
+}
+  h2 {
+    text-align: center;
+  }
+
+
+  h3 {
+    text-align: center;
+  }
+    .caption h1{
+        font-size: 1.9rem;
+        letter-spacing: .1rem;
+        padding-bottom: .4rem;
+    }
+    .caption h3{
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+    .btn-lg {
+        padding: .4rem .9rem;
+        font-size: .9rem;
+    }
+    .narrow {
+        width: 85%;
+    }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
